@@ -9,6 +9,7 @@ sudo apt-get install \
 	mysql-client \
 	mysql-common \
 	mysql-server \
+	mysql-workbench \
 	php5 \
 	libapache2-mod-php5 \
 	php5-cli \
