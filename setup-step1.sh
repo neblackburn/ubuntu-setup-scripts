@@ -43,3 +43,7 @@ sudo apt-get install \
 
 sudo updatedb
 
+git clone https://github.com/neblackburn/screenrc.git
+ln -s screenrc/.screenrc ~/.screenrc
+git clone https://github.com/neblackburn/vimrc.git
+ln -s vimrc/.vimrc ~/.vimrc
