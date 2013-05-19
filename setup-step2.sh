@@ -16,3 +16,4 @@ echo 'zend_extension=/us/lib/php5/20090626/xdebug.so' >> $PHPINI
 echo 'xdebug.remote_enable=1' >> $PHPINI
 echo 'xdebug.remote_host=localhost' >> $PHPINI
 echo 'xdebug.remote_port=9000' >> $PHPINI
+echo 'xdebug.remote_autostart=1' >> $PHPINI
