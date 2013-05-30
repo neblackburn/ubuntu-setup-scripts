@@ -5,6 +5,7 @@ sudo apt-get update
 sudo apt-get upgrade
 
 sudo apt-get install \
+	linux-headers-$(uname -r) \
 	apache2 \
 	mysql-client \
 	mysql-common \
