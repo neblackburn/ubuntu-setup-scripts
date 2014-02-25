@@ -26,7 +26,6 @@ sudo apt-get install \
 	php-pear \
 	php5-xmlrpc \
 	meld \
-	git \
 	vim \
 	vim-common \
 	screen \
@@ -44,8 +43,23 @@ sudo apt-get install \
 
 sudo updatedb
 
-mkdir ~/tmp
-git clone https://github.com/neblackburn/screenrc.git
-ln -s screenrc/.screenrc ~/.screenrc
-git clone https://github.com/neblackburn/vimrc.git
-ln -s vimrc/.vimrc ~/.vimrc
+if [ ! -d "~/tmp" ]; then
+  # Control will enter here if $DIRECTORY doesn't exist.
+  mkdir ~/tmp
+fi
+
+if [ ! -d "~/screenrc" ]; then
+  # Control will enter here if $DIRECTORY doesn't exist.
+  git clone https://github.com/neblackburn/screenrc.git ~/screenrc
+  ln -s screenrc/.screenrc ~/.screenrc
+fi
+
+if [ ! -d "~/vimrc" ]; then
+  # Control will enter here if $DIRECTORY doesn't exist.
+  git clone https://github.com/neblackburn/vimrc.git ~/vimrc
+  ln -s vimrc/.vimrc ~/.vimrc
+fi
+
+if [ ! -d "~/.vim/bundle/vundle" ]; then
+  git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+fi
