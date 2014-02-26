@@ -39,7 +39,8 @@ sudo apt-get -y install \
 	libipc-sharedcache-perl \
 	libmcrypt-dev \
 	mcrypt \
-	memcached
+	memcached \
+	build-essential
 
 sudo updatedb
 
